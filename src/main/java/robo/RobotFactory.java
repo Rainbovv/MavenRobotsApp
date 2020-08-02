@@ -5,7 +5,7 @@ public class RobotFactory {
     private RobotFactory(){}
 
     public AbstractRobot getRobot(String model, String name) {
-       return getRobot(model,name,0,0);
+       return getRobot(model, name, 0, 0);
     }
 
     public AbstractRobot getRobot(String model, String name, int x, int y) {
@@ -19,7 +19,7 @@ public class RobotFactory {
                 return new BetaRobot(name, model, x, y);
 
             case "CHARLIE":
-                return new CharlieRobot(name,model, x, y);
+                return new CharlieRobot(name, model, x, y);
 
             default:
                 System.err.println("Unfortunately we don't have such a model!\n" +
