@@ -22,7 +22,7 @@ class SimpleJunitTest {
         robot.setName(null);
 
         assertNotEquals(null, robot.getName(),"Name test failed\n" +
-                                                                "REASON: null name not allowed!" );
+                                              "REASON: null name not allowed!" );
     }
 
     /** model cannot be null */
@@ -31,7 +31,7 @@ class SimpleJunitTest {
         robot.setModel(null);
 
         assertNotEquals(null, robot.getModel(),"Model test failed\n" +
-                                                                    "REASON: null model not allowed!");
+                                               "REASON: null model not allowed!");
     }
 
 
@@ -41,7 +41,7 @@ class SimpleJunitTest {
         robot.setX(-100);
 
         assertFalse(robot.getX() < 0,"X coord test failed\n" +
-                                                        "REASON: Values less than 0 not allowed!" );
+                                      "REASON: Values less than 0 not allowed!" );
     }
 
     @Test
@@ -49,7 +49,7 @@ class SimpleJunitTest {
         robot.setX(1000);
 
         assertFalse(robot.getX() > 100,"X coord test failed\n" +
-                                                        "REASON: Values more than 100 not allowed!" );
+                                       "REASON: Values more than 100 not allowed!" );
     }
 
     /** Y cannot be outside 0..100 */
@@ -58,7 +58,7 @@ class SimpleJunitTest {
         robot.setY(-100);
 
         assertFalse(robot.getY() < 0,"Y coord test failed\n" +
-                                                        "REASON: Values less than 0 not allowed!" );
+                                     "REASON: Values less than 0 not allowed!" );
     }
 
     @Test
@@ -66,7 +66,7 @@ class SimpleJunitTest {
         robot.setY(1000);
 
         assertFalse(robot.getY() > 100,"Y coord test failed\n" +
-                                                        "REASON: Values more than 100 not allowed!" );
+                                       "REASON: Values more than 100 not allowed!" );
     }
 
     /** MOVEMENT */
@@ -76,7 +76,7 @@ class SimpleJunitTest {
         robot.setX(0);
 
         assertFalse(robot.moveLeft(),"Move test failed\n" +
-                                                "REASON: moveLeft() out of bounds!");
+                                     "REASON: moveLeft() out of bounds!");
     }
 
     @Test
@@ -84,7 +84,7 @@ class SimpleJunitTest {
         robot.setX(100);
 
         assertFalse(robot.moveRight(),"Move test failed\n" +
-                                                "REASON: moveRight() out of bounds!");
+                                      "REASON: moveRight() out of bounds!");
     }
 
     @Test
@@ -92,7 +92,7 @@ class SimpleJunitTest {
         robot.setY(0);
 
         assertFalse(robot.moveUp(),"Move test failed\n" +
-                                            "REASON: moveUp() out of bounds!");
+                                   "REASON: moveUp() out of bounds!");
     }
 
     @Test
@@ -100,6 +100,6 @@ class SimpleJunitTest {
         robot.setY(100);
 
         assertFalse(robot.moveDown(),"Move test failed\n" +
-                                                "REASON: moveDown() out of bounds!");
+                                     "REASON: moveDown() out of bounds!");
     }
 }
