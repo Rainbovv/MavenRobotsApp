@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ChargeTest {
 
 	private BetaRobot robot = (BetaRobot)RobotFactory.getInstance()
-													 .getRobot("Beta", "B123");
+							 .getRobot("Beta", "B123");
 
 
 	/** Charge cannot be les than 0 */
@@ -16,7 +16,7 @@ class ChargeTest {
 		robot.setCharge(-100);
 
 		assertFalse(robot.getCharge() < 0,"Charge test failed" +
-														   "\nREASON: Values les than 0 not allowed!");
+						  "\nREASON: Values les than 0 not allowed!");
 	}
 
 	/** Charge cannot be more than 100 */
@@ -25,7 +25,7 @@ class ChargeTest {
 		robot.setCharge(1000);
 
 		assertFalse(robot.getCharge() > 100,"Charge test failed" +
-															 "\nREASON: Values more than 0 not allowed!");
+						    "\nREASON: Values more than 0 not allowed!");
 	}
 
 	/** Checking if the battery is discharging correctly in movement */
@@ -35,8 +35,7 @@ class ChargeTest {
 
 		while(robot.moveRight());
 
-		assertFalse(robot.getCharge() != 4 ||
-							 robot.getX() != 92,"Charge test failed" +
-													    "\nREASON: The moving system should be calibrated!" ) ;
+		assertFalse(robot.getCharge() != 4 || robot.getX() != 92,"Charge test failed" +
+									 "\nREASON: The moving system should be calibrated!" ) ;
 	}
 }
