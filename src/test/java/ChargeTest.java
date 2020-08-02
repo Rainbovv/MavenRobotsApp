@@ -11,23 +11,19 @@ class ChargeTest {
 	@Test
 	public void negativeChargeTest() {
 		robot.setCharge(-100);
-		assertFalse(robot.getCharge() < 0,"Charge test failed" +
-														   "\nREASON: Values les than 0 not allowed!");
+		assertFalse(robot.getCharge() < 0,"Charge test failed\nREASON: Values les than 0 not allowed!");
 	}
 
 	@Test
 	public void chargeOverflowTest(){
 		robot.setCharge(1000);
-		assertFalse(robot.getCharge() > 100,"Charge test failed" +
-															 "\nREASON: Values more than 0 not allowed!");
+		assertFalse(robot.getCharge() > 100,"Charge test failed\nREASON: Values more than 0 not allowed!");
 	}
 
 	@Test
 	public void batteryDischargingInMoving() {
 		robot.setCharge(50);
 		while(robot.moveRight());
-		assertFalse(robot.getCharge() != 4 ||
-							 robot.getX() != 92,"Charge test failed" +
-													    "\nREASON: The moving system should be calibrated!" ) ;
+		assertFalse(robot.getCharge() != 4 || robot.getX() != 92,"Charge test failed\nREASON: The moving system should be calibrated!" ) ;
 	}
 }
