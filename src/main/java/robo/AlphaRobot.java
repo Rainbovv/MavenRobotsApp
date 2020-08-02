@@ -15,11 +15,11 @@ public class AlphaRobot extends AbstractRobot implements Has2DCoordinatesInterfa
     //////////////////  CONSTRUCTORS  //////////////////
     protected AlphaRobot(){}
 
-    protected AlphaRobot(String name, String model, int X, int Y) {
+    protected AlphaRobot(String name, String model, int x, int y) {
         setName(name);
         setModel(model);
-        setX(X);
-        setY(Y);
+        setX(x);
+        setY(y);
     }
 
 
