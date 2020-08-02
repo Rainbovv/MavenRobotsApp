@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DiagonalWalkTest {
 	private CharlieRobot robot = (CharlieRobot)RobotFactory.getInstance()
-															.getRobot("Charlie", "B124", 50, 50);
+							       .getRobot("Charlie", "B124", 50, 50);
 
 
 	@BeforeEach
@@ -20,16 +20,14 @@ class DiagonalWalkTest {
 	public void outOfBoundsMovingTest1() {
 		robot.setY(100);
 
-		assertFalse(robot.moveDownRight(), "Diagonal moving test failed\n" +
-												   "REASON: moveDownRight() out of bounds!");
+		assertFalse(robot.moveDownRight(), "Diagonal moving test failed\n"REASON: moveDownRight() out of bounds!");
 	}
 
 	@Test
 	public void outOfBoundsMovingTest2() {
 		robot.setY(100);
 
-		assertFalse(robot.moveDownLeft(), "Diagonal moving test failed\n" +
-												  "REASON: moveDownLeft() out of bounds!");
+		assertFalse(robot.moveDownLeft(), "Diagonal moving test failed\nREASON: moveDownLeft() out of bounds!");
 	}
 
 	/** Y cannot be less than 0 */
@@ -37,16 +35,14 @@ class DiagonalWalkTest {
 	public void outOfBoundsMovingTest3() {
 		robot.setY(0);
 
-		assertFalse(robot.moveUpRight(), "Diagonal moving test failed\n" +
-												 "REASON: moveUpRight() out of bounds!");
+		assertFalse(robot.moveUpRight(), "Diagonal moving test failed\nREASON: moveUpRight() out of bounds!");
 	}
 
 	@Test
 	public void outOfBoundsMovingTest4() {
 		robot.setY(0);
 
-		assertFalse(robot.moveUpLeft(), "Diagonal moving test failed\n" +
-												"REASON: moveUpLeft() out of bounds!");
+		assertFalse(robot.moveUpLeft(), "Diagonal moving test failed\nREASON: moveUpLeft() out of bounds!");
 	}
 
 	/** X cannot be more than 100 */
@@ -54,16 +50,14 @@ class DiagonalWalkTest {
 	public void outOfBoundsMovingTest5() {
 		robot.setX(100);
 
-		assertFalse(robot.moveDownRight(), "Diagonal moving test failed\n" +
-											       "REASON: moveDownRight() out of bounds!");
+		assertFalse(robot.moveDownRight(), "Diagonal moving test failed\nREASON: moveDownRight() out of bounds!");
 	}
 
 	@Test
 	public void outOfBoundsMovingTest6() {
 		robot.setX(100);
 
-		assertFalse(robot.moveUpRight(), "Diagonal moving test failed\n" +
-							                     "REASON: moveUpRight() out of bounds!");
+		assertFalse(robot.moveUpRight(), "Diagonal moving test failed\nREASON: moveUpRight() out of bounds!");
 	}
 
 	/** X cannot be less than 0 */
@@ -71,16 +65,14 @@ class DiagonalWalkTest {
 	public void outOfBoundsMovingTest7() {
 		robot.setX(0);
 
-		assertFalse(robot.moveUpLeft(), "Diagonal moving test failed\n" +
-									            "REASON: moveUpLeft() out of bounds!");
+		assertFalse(robot.moveUpLeft(), "Diagonal moving test failed\nREASON: moveUpLeft() out of bounds!");
 	}
 
 	@Test
 	public void outOfBoundsMovingTest8() {
 		robot.setX(0);
 
-		assertFalse(robot.moveDownLeft(), "Diagonal moving test failed\n" +
-										          "REASON: moveDownLeft() out of bounds!");
+		assertFalse(robot.moveDownLeft(), "Diagonal moving test failed\nREASON: moveDownLeft() out of bounds!");
 	}
 
 	/** Checking if robot is moving correctly */
