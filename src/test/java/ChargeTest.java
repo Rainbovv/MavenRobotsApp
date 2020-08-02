@@ -24,6 +24,7 @@ class ChargeTest {
 	public void batteryDischargingInMoving() {
 		robot.setCharge(50);
 		while(robot.moveRight());
-		assertFalse(robot.getCharge() != 4 || robot.getX() != 92,"Charge test failed\nREASON: The moving system should be calibrated!" ) ;
+		assertFalse(robot.getCharge() != 4 || robot.getX() != 92,"Charge test failed\n" +
+			    						 "REASON: The moving system should be calibrated!" ) ;
 	}
 }
