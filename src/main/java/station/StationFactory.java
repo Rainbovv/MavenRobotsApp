@@ -1,13 +1,11 @@
 package station;
 
-import robo.RobotFactory;
-
 public class StationFactory {
 
-    private StationFactory(){}
+    private StationFactory() {}
 
-    public ChargingStation getStation()
-        {return new ChargingStation();
+    public ChargingStation getStation() {
+        return new ChargingStation();
     }
 
     public ChargingStation getStation(int x, int y, int charge) {

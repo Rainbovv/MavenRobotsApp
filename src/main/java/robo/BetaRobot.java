@@ -1,7 +1,5 @@
 package robo;
 
-
-import interfaces.Has2DCoordinatesInterface;
 import interfaces.HasBatteryInterface;
 
 public class BetaRobot extends AlphaRobot implements HasBatteryInterface {
