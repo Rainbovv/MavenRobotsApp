@@ -5,8 +5,8 @@ import interfaces.DiagonalMovableInterface;
 public class CharlieRobot extends BetaRobot implements DiagonalMovableInterface {
 
     //////////////////  CONSTRUCTORS //////////////////
-    protected CharlieRobot(String name, String model) {
-        super(name, model);
+    protected CharlieRobot(String name, String model, int x, int y) {
+        super(name, model, x, y);
     }
 
 

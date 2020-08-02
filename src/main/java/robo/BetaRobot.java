@@ -1,6 +1,7 @@
 package robo;
 
 
+import interfaces.Has2DCoordinatesInterface;
 import interfaces.HasBatteryInterface;
 
 public class BetaRobot extends AlphaRobot implements HasBatteryInterface {
@@ -11,8 +12,8 @@ public class BetaRobot extends AlphaRobot implements HasBatteryInterface {
 
 
     //////////////////  CONSTRUCTORS //////////////////
-    protected BetaRobot(String name, String model) {
-        super(name, model);
+    protected BetaRobot(String name, String model, int x, int y) {
+        super(name, model, x, y);
         setCharge(0);
     }
 

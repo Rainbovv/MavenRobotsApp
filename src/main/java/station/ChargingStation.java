@@ -10,6 +10,8 @@ public class ChargingStation implements Has2DCoordinatesInterface, HasBatteryInt
     private byte charge;
     private byte chargeDivider = 0;
 
+    protected ChargingStation(){}
+
     protected ChargingStation(int x, int y, int charge){
         setX(x);
         setY(y);
@@ -52,7 +54,7 @@ public class ChargingStation implements Has2DCoordinatesInterface, HasBatteryInt
         if (checkCoords((Has2DCoordinatesInterface)chargeable) && checkCharge() && checkObjectsCharge(chargeable)){
 
             while (chargeable.getCharge() < 100) {
-                chargeable.setCharge(chargeable.getCharge() + 1); 
+                chargeable.setCharge(chargeable.getCharge() + 1);
                 divideCharge();
             }
             return true;

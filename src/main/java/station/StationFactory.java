@@ -4,9 +4,13 @@ import robo.RobotFactory;
 
 public class StationFactory {
 
-    private StationFactory(){};
+    private StationFactory(){}
 
-    public ChargingStation getStation(int x, int y, int charge){
+    public ChargingStation getStation()
+        {return new ChargingStation();
+    }
+
+    public ChargingStation getStation(int x, int y, int charge) {
         return new ChargingStation(x , y, charge);
     }
 
