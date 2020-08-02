@@ -10,7 +10,7 @@ public class ChargingStation implements Has2DCoordinatesInterface, HasBatteryInt
     private byte charge;
     private byte chargeDivider = 0;
 
-    protected ChargingStation(){}
+    protected ChargingStation() {}
 
     protected ChargingStation(int x, int y, int charge){
         setX(x);
