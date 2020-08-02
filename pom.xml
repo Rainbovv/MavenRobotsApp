@@ -44,33 +44,33 @@
                 <version>2.22.2</version>
             </plugin>
 
-<!--            <plugin>-->
-<!--                <artifactId>maven-assembly-plugin</artifactId>-->
-<!--                <executions>-->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
 
-<!--                    <execution>-->
-<!--                        <id>build-1-8jdk-RoboApp</id>-->
-<!--                        <configuration>-->
-<!--                            <archive>-->
-<!--                                <manifest>-->
-<!--                                    <addClasspath>true</addClasspath>-->
-<!--                                    <mainClass>main.Application</mainClass>-->
-<!--                                </manifest>-->
-<!--                            </archive>-->
-<!--                            <descriptorRefs>-->
-<!--                            <descriptorRef>jar-with-dependencies</descriptorRef>-->
-<!--                            </descriptorRefs>-->
-<!--                            <finalName>Robo-1-8.jar</finalName>-->
-<!--                        </configuration>-->
-<!--                        <phase>package</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>single</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
+                    <execution>
+                        <id>build-1-8jdk-RoboApp</id>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <addClasspath>true</addClasspath>
+                                    <mainClass>main.Application</mainClass>
+                                </manifest>
+                            </archive>
+                            <descriptorRefs>
+                            <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
+                            <finalName>Robo-1-8.jar</finalName>
+                        </configuration>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
 
-<!--                </executions>-->
+                </executions>
 
-<!--            </plugin>-->
+            </plugin>
 
         </plugins>
 
