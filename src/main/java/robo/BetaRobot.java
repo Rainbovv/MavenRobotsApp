@@ -68,8 +68,8 @@ public class BetaRobot extends AlphaRobot implements HasBatteryInterface {
     protected void checkMove(){
         if (moves != 0 && moves % 2 != 0) {
             charge -= 1;
-            moves++;
         }
+        moves++;
     }
 
     protected boolean checkCharge(){
