@@ -20,7 +20,7 @@ class DiagonalWalkTest {
 	public void outOfBoundsMovingTest1() {
 		robot.setY(100);
 
-		assertFalse(robot.moveDownRight(), "Diagonal moving test failed\n"REASON: moveDownRight() out of bounds!");
+		assertFalse(robot.moveDownRight(), "Diagonal moving test failed\nREASON: moveDownRight() out of bounds!");
 	}
 
 	@Test
